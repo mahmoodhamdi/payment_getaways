@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:payment_getaways/features/checkout/presentation/pages/my_cart_view.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+class CheckoutApp extends StatelessWidget {
+  const CheckoutApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      home: MyCartView(),
+    );
   }
 }
