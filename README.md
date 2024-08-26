@@ -1,16 +1,34 @@
-# payment_getaways
+# Checkout Template App
 
-A new Flutter project.
+A Flutter-based checkout template designed to streamline the development of checkout features in your apps. This template provides a solid foundation for handling payments, integrating various gateways, and ensuring a smooth user experience.
+
+## Features
+
+- **Core Styles and Themes**: Predefined styles for consistent UI.
+- **Customizable Components**: Easily modify and extend components as needed.
+- **Responsive Design**: Ensures a seamless experience across devices.
+
+## Payment Gateways
+
+This app will cover integrations with the following payment gateways:
+
+- [ ] Stripe
+- [ ] PayPal
+- [ ] Paymob
+- [ ] Fawry
+- [ ] 2Checkout
+- [ ] Opay
+- [ ] PayTabs
+- [ ] Square
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with this template, follow the instructions below:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository.
+2. Install the necessary dependencies.
+3. Run the app on your preferred device.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Would you like to add or modify anything before proceeding?
