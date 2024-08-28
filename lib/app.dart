@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_getaways/features/checkout/presentation/pages/my_cart_view.dart';
+import 'package:payment_getaways/features/checkout/presentation/views/my_cart_view.dart';
 
 class CheckoutApp extends StatelessWidget {
   const CheckoutApp({super.key});
@@ -9,10 +9,7 @@ class CheckoutApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Payment Getaways',
-      
-      home: MyCartView(
-
-      ),
+      home: MyCartView(),
     );
   }
 }

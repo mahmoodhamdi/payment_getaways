@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:payment_getaways/core/widgets/custom_button.dart';
-import 'package:payment_getaways/features/checkout/presentation/widgets/order_info_item.dart';
-import 'package:payment_getaways/features/checkout/presentation/widgets/total_price.dart';
+import 'package:payment_getaways/features/checkout/presentation/widgets/cart_info_item.dart';
+import 'package:payment_getaways/features/checkout/presentation/widgets/payment_methods_bottom_sheet.dart';
 
-class CartViewBody extends StatelessWidget {
-  const CartViewBody({super.key});
+class MyCartViewBody extends StatelessWidget {
+  const MyCartViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,16 +42,20 @@ class CartViewBody extends StatelessWidget {
             height: 34,
             color: Color(0xffC7C7C7),
           ),
-          const TotalPrice(title: 'Total', value: r'$50.97'),
-          const SizedBox(
-            height: 16,
-          ),
           CustomButton(
             text: 'Complete Payment',
             onTap: () {
               // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
               //   return const PaymentDetailsView();
               // }));
+
+              showModalBottomSheet(
+                  context: context,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  builder: (context) {
+                    return const PaymentMethodsBottomSheet();
+                  });
             },
           ),
           const SizedBox(
